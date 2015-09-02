@@ -1,0 +1,62 @@
+#site_title {
+    text-align: center;
+    padding: 10px;
+    border: thick black solid;
+    margin: 0px;
+}
+
+#main_body {
+    margin: 0px;
+    border-left: thick black solid;
+    border-right: thick black solid;
+    border-bottom: thick black solid;
+    height: 300px;
+}
+
+#navigation {
+    background-color: yellow;
+    border-bottom: thick black solid;
+    padding: 10px;
+    width: 17.75%;
+    max-width: 20%;
+    height: auto;
+}
+
+.link_header {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav_links_list {
+    margin: 0px;
+}
+
+#artform {
+    padding: 10px 0px 10px 10px;
+    position: absolute;
+    top: 72px;
+    left: 21%;
+    border-left: thick black solid;
+    border-bottom: thick black solid;
+    width: 85%;
+}
+
+article h1, article h3{
+    margin: 0px;
+}
+
+#main_content {
+    height: 50%;
+}
+
+.lynx:visited {
+    color: green;
+}
+
+.lynx:link {
+    color: aquamarine;
+}
+
+#futa {
+    text-align: center;
+}
