@@ -1,0 +1,58 @@
+#site_header {
+    border-bottom: thick black solid;
+}
+
+.col-md-12 {
+    padding: 0px;
+    border: thick black solid;
+}
+
+#site_title {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+#main_body {
+    margin: 0px;
+}
+
+#navigation {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.link_header {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav_links_list {
+    margin: 0px;
+}
+
+.col-md-10 {
+    border: thick blue solid;
+}
+
+article h1, article h3{
+    margin: 0px;
+}
+
+.col-md-2 {
+    padding: 0px;
+    border: thick tan solid;
+}
+
+.lynx:visited {
+    color: green;
+}
+
+.lynx:link {
+    color: aquamarine;
+}
+
+#futa {
+    text-align: center;
+    margin: 10px;
+}
