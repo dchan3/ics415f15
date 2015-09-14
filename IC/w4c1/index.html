@@ -23,12 +23,26 @@
                     document.getElementById(id).innerHTML = "Hello.";
                     document.getElementById(id).style.color = "black";
                     break;
+                case 'dblclick':
+                    document.getElementById(id).innerHTML = "You clicked me twice!!!";
+                    document.getElementById(id).style.color = "white";
+                    break;
+            }
+        }
+
+        function creepyH1(event) {
+            if (event.keyCode == 8 && document.getElementById('creepy').innerHTML != "") {
+                document.getElementById('creepy').innerHTML = document.getElementById('creepy').innerHTML.substr(0, document.getElementById('creepy').innerHTML.length - 1);
+            }
+            else {
+                document.getElementById('creepy').innerHTML +=
+                        String.fromCharCode(event.which);
             }
         }
     </script>
     <title>My Website</title>
 </head>
-<body>
+<body onkeypress="creepyH1(event)">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -36,17 +50,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4" onclick="change('click', 'label1');" onmouseenter="change('enter', 'label1');"
-            onmouseleave="change('leave', 'label1');">
+            <div class="col-md-4" id="div1" onclick="change('click', 'label1');"
+                 onmouseenter="change('enter', 'label1');"
+            onmouseleave="change('leave', 'label1');" ondblclick="change('dblclick', 'label1');">
                 <p id="label1">Hello.</p>
             </div>
-            <div class="col-md-4" onclick="change('click', 'label2');" onmouseenter="change('enter', 'label2');"
-                 onmouseleave="change('leave', 'label2');">
+            <div class="col-md-4" id="div2" onclick="change('click', 'label2');"
+                 onmouseenter="change('enter', 'label2');"
+                 onmouseleave="change('leave', 'label2');" ondblclick="change('dblclick', 'label2');">
                 <p id="label2">Hello.</p>
             </div>
-            <div class="col-md-4" onclick="change('click', 'label3');" onmouseenter="change('enter', 'label3');"
-                 onmouseleave="change('leave', 'label3');">
+            <div class="col-md-4" id="div3" onclick="change('click', 'label3');"
+                 onmouseenter="change('enter', 'label3');"
+                 onmouseleave="change('leave', 'label3');" ondblclick="change('dblclick', 'label3');">
                 <p id="label3">Hello.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="creepy"></h1>
             </div>
         </div>
     </div>

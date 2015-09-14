@@ -1,3 +1,15 @@
 p {
     color: black;
 }
+
+#div1 {
+    background-color: grey;
+}
+
+#div2 {
+    background-color: lightgreen;
+}
+
+#div3 {
+    background-color: lightblue;
+}
