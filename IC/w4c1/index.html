@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function change(evt, id) {
+            switch (evt) {
+                case 'click':
+                    document.getElementById(id).innerHTML = "You clicked me!";
+                    document.getElementById(id).style.color = "red";
+                    break;
+                case 'enter':
+                    document.getElementById(id).innerHTML = "Please don't click me...";
+                    document.getElementById(id).style.color = "magenta";
+                    break;
+                case 'leave':
+                    document.getElementById(id).innerHTML = "Hello.";
+                    document.getElementById(id).style.color = "black";
+                    break;
+            }
+        }
+    </script>
+    <title>My Website</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" onclick="change('click', 'label1');" onmouseenter="change('enter', 'label1');"
+            onmouseleave="change('leave', 'label1');">
+                <p id="label1">Hello.</p>
+            </div>
+            <div class="col-md-4" onclick="change('click', 'label2');" onmouseenter="change('enter', 'label2');"
+                 onmouseleave="change('leave', 'label2');">
+                <p id="label2">Hello.</p>
+            </div>
+            <div class="col-md-4" onclick="change('click', 'label3');" onmouseenter="change('enter', 'label3');"
+                 onmouseleave="change('leave', 'label3');">
+                <p id="label3">Hello.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

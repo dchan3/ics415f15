@@ -1,0 +1,44 @@
+body {
+    background: url("header-background.png") repeat 0 0;
+}
+
+nav {
+    height: 50px;
+}
+
+h1 {
+    font-family: 'Petit Formal Script', cursive;
+}
+
+#head {
+    height: 25vh;
+    text-align: center;
+}
+
+#foot {
+    height: 50px;
+    text-align: center;
+}
+
+#the_main {
+    border-top: thin black solid;
+}
+
+.col-md-3 {
+    height: 25vh;
+}
+.col-md-9 {
+    border-left: thin solid black;
+}
+
+i[class]{
+    color: black;
+}
+
+#foot {
+    border-top: thin solid black;
+}
+
+input[type="submit"] {
+    margin: 10px 0px 10px 0px;
+}

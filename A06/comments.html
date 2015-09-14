@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="my_style.css">
+    <link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>Comments</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" id="head">
+            <h1>My Website</h1>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default">
+                    <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    <a class="navbar-brand" href="comments.html"><span class="glyphicon glyphicon-pushpin"></span> Comments</a>
+                    <a class="navbar-brand active" href="about.html"><span class="glyphicon glyphicon-info-sign"></span>  About Us</a>
+                </nav>
+            </div>
+        </div>
+        <div class="row" id="the_main">
+            <div class="col-md-3">
+            <h4>Drop a comment!</h4>
+            <p>Feel free to speak your mind!</p>
+        </div>
+        <div class="col-md-9">
+            <h4>Comments</h4>
+            <form method="get">
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-1"><i class="fa fa-user"></i> Name</span>
+                    <input class="form-control" type="text" name="nombre" placeholder="John Doe">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-2"><i class="fa fa-at"></i> Email</span>
+                    <input class="form-control" type="email" name="email" placeholder="john@johndoe.com">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-3"><i class="fa fa-facebook"></i> Facebook profile page</span>
+                    <input class="form-control" type="url" name="page">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-4"><i class="fa fa-calendar-o"></i> Date of first visit</span>
+                    <input class="form-control" type="date" name="first" value="">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-5"><i class="fa fa-calendar-o"></i> Date and time of last visit</span>
+                    <input class="form-control" type="datetime-local" name="last" value="">
+
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-6"><i class="fa fa-question"></i> How many times have you come prior to this visit?</span>
+                    <input class="form-control" type="number" min="0" name="timesbefore">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-7"><i class="fa fa-barcode"></i> Receipt No.</span>
+                    <input class="form-control" type="password" name="receipt">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-8"><i class="fa fa-flag"></i> Table Color</span>
+                    <input class="form-control" type="color" name="table">
+                </div>
+                <div class="input-group" data-toggle="buttons">
+                    <span class="input-group-addon" id="addon-9"><i class="fa fa-smile-o"></i> Were we of great service to you during your visit?</span>
+                    <label class="btn btn-default">
+                        <input class="form-control" type="radio" name="yesno" value="yes">Yes
+                    </label>
+                    <label class="btn btn-default">
+                        <input class="form-control" type="radio" name="yesno" value="no">No
+                    </label>
+                </div>
+                <div class="input-group" data-toggle="buttons">
+                    <span class="input-group-addon" id="addon-10"><i class="fa fa-question"></i> Why? What does the reason relate to? (Choose at least one.)</span>
+                    <label class="btn btn-default">
+                        <input type="checkbox" name="reason" value="time">Time to prepare food
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="checkbox" name="reason" value="attitude">Attitude of staff<br>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-11"><i class="fa fa-tachometer"></i> On a scale of 1 (atrocious) to 5 (excellent), how was our overall service?</span>
+                    <input class="form-control" type="range" min="1" max="5" name="overall" value="2">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-12"><i class="fa fa-refresh"></i> What menu items would you like to see at our restaurant? </span>
+                <input class="form-control" type="search" name="items" value="">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-13"><i class="fa fa-calendar-o"></i> During what month might you come again? </span>
+                    <input class="form-control" type="month" name="nexttime" value="">
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-12" id="foot">
+        Image found <a href="http://www.designbolts.com/wp-content/uploads/2013/02/Rough-Grey-Tilable-Pattern-For-Website-Background.jpg">here</a>.<br>Copyright (C) Derek Chan
+    </div>
+    </div>
+    </div>
+</body>
+</html>
