@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>MY WEBSITE</title>
 </head>
 <body>
-
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <h1>MY WEBSITE</h1>
+        </div>
+        <div class="col-md-12">
+            <form action="process.html" method="GET">
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-1">Name</span>
+                    <input class="form-control" type="text" name="nombre" placeholder="John Doe">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-2">Address</span>
+                    <input class="form-control" type="text" name="address" placeholder="123 Main St.">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="addon-3">Phone Number</span>
+                    <input class="form-control" type="text" name="phone" placeholder="123-456-7890">
+                </div>
+                <div class="input-group">
+                    <input class="form-control" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

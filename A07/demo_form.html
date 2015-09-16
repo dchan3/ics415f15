@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="myScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>Demo Form</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>DEMO FORM</h1>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-12">
+            <form name="myForm" action="demo_form.html" onsubmit="return validateForm()" method="get">
+                <div class="form-group">
+                    <label for="username">User name: </label>
+                    <input type="text" name="name" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm">Confirm Password: </label>
+                    <input type="password" name="confirm" id="confirm">
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+            <p id="error"></p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

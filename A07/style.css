@@ -1,0 +1,7 @@
+#error {
+    color: red;
+}
+
+.error_field {
+    background-color: red;
+}

@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getVar(variable) {
+            var url = window.location.href;
+            var query = url.substr(url.indexOf('?') + 1);
+            for (var i = 0; i < query.split("&").length; i++) {
+                if (query.split("&")[i].indexOf(variable) == 0) {
+                    var retval = query.split("&")[i].split("=")[1];
+                    while (retval.indexOf('+') >= 0) {
+                        retval = retval.replace('+', ' ');
+                    }
+                    return retval;
+                }
+            }
+            return null;
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>MY WEBSITE</title>
 </head>
 <body>
-
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <h1>MY WEBSITE</h1>
+        </div>
+        <table border="1">
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Address</b></td>
+                <td><b>Phone Number</b></td>
+            </tr>
+            <tr>
+                <td><script>document.write(getVar("nombre"));</script></td>
+                <td><script>document.write(getVar("address"));</script></td>
+                <td><script>document.write(getVar("phone"));</script></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
