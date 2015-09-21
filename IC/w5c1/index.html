@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("body").keypress(function() {
+                if (event.keyCode == 8 && $("#creepy").html() != "") {
+                    $("#creepy").html($("#creepy").html().substr(0, $("#creepy").html().length - 1));
+                }
+                else {
+                    $("#creepy").append(String.fromCharCode(event.which));
+                }
+            });
+            $("#div1").click(function() {
+                $("#label1").html("You clicked me!");
+                $("#label1").css("color", "red");
+            });
+            $("#div1").mouseenter(function() {
+                $("#label1").html("Don't click me...");
+                $("#label1").css("color", "magenta");
+            });
+            $("#div1").mouseleave(function() {
+                $("#label1").html("Hello.");
+                $("#label1").css("color", "#777777");
+            });
+            $("#div2").click(function() {
+                $("#label2").html("You clicked me!");
+                $("#label2").css("color", "red");
+            });
+            $("#div2").mouseenter(function() {
+                $("#label2").html("Don't click me...");
+                $("#label2").css("color", "magenta");
+            });
+            $("#div2").mouseleave(function() {
+                $("#label2").html("Hello.");
+                $("#label2").css("color", "#777777");
+            });
+            $("#div3").click(function() {
+                $("#label3").html("You clicked me!");
+                $("#label3").css("color", "red");
+            });
+            $("#div3").mouseenter(function() {
+                $("#label3").html("Don't click me...");
+                $("#label3").css("color", "magenta");
+            });
+            $("#div3").mouseleave(function() {
+                $("#label3").html("Hello.");
+                $("#label3").css("color", "#777777");
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <title></title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>DOM Events</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" id="div1">
+                <p id="label1">Hello.</p>
+            </div>
+            <div class="col-md-4" id="div2">
+                <p id="label2">Hello.</p>
+            </div>
+            <div class="col-md-4" id="div3">
+                <p id="label3">Hello.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="creepy"></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
