@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <script>
+        $(document).ready(function() {
+            $("#surprise").hide();
+            $("#surprise").load("http://courses.ics.hawaii.edu/ics415f15/");
+            $("#showhide1").click(function() {
+                $("#p1").toggle(100);
+                if ($("#showhide1").html() == "[ + ]") $("#showhide1").html("[ - ]");
+                else $("#showhide1").html("[ + ]");
+            });
+            $("#showhide2").click(function() {
+                $("#p2").toggle(100);
+                if ($("#showhide2").html() == "[ + ]") $("#showhide2").html("[ - ]");
+                else $("#showhide2").html("[ + ]");
+            });
+            $("#showhide3").click(function() {
+                $("#surprise").toggle(100);
+                if ($("#showhide3").html() == "[ + ]") {
+                    $("#showhide3").html("[ - ]");
+                }
+                else $("#showhide3").html("[ + ]");
+            });
+        });
+    </script>
+    <title>My Website</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h4><span id="showhide1">[ - ]</span> Ponies</h4>
+                <p id="p1">I love ponies. Do you?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4><span id="showhide2">[ - ]</span> Bronies</h4>
+                <p id="p2">Men who love ponies are called bronies. I'm a man and I like ponies, so that makes me a
+                    brony.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4><span id="showhide3">[ + ]</span> Surprise</h4>
+                <span id="surprise"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
