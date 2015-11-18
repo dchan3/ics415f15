@@ -1,0 +1,25 @@
+<template name="header">
+<div class="row">
+  <div class="col-xs-12">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+        NotAlone.com
+      </a>
+    </div>
+      <ul class="nav navbar-nav">
+        <li>
+        {{#if currentUser}}
+            <p class="navbar-text">Welcome, {{currentUser.username}}.</p>
+          {{else}}
+            <p class="navbar-text">Welcome, Anonymous.</p>
+          {{/if}}
+        </li>
+        </ul>
+        {{> atNavButton}}
+        </div>
+    </nav>
+  </div>
+</div>
+</template>
