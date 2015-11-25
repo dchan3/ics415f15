@@ -1,9 +1,11 @@
 <template name="home">
 <div class="row">
   <div class="col-xs-12">
-    {{#unless Meteor.user}}
+    {{#if currentUser}}
+      {{> chatroom}}
+    {{else}}
       {{> atForm}}
-    {{/unless}}
+    {{/if}}
   </div>
 </div>
 </template>

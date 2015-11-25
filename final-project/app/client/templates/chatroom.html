@@ -1,0 +1,13 @@
+<template name="chatroom">
+  <div class="row">
+    <div class="col-xs-3">
+      {{> channels}}
+      <input id="channame" type="text">
+      <button id="addChannel">Add Channel</button>
+    </div>
+    <div class="col-xs-9">
+      {{> room}}
+      <input class="enter" type="text">
+    </div>
+  </div>
+</template>
