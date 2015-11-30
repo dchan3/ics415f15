@@ -1,7 +1,16 @@
 <template name="channels">
   <div class="channels">
+    <div style="border: thin black solid;">
+    <h4 style="padding: 2px; font-family: 'Courier New', sans-serif;">Channels</h4>
+    </div>
     {{#each subbed id}}
       {{> channel name=channelname}}
+    {{/each}}
+    <div style="border: thin black solid;">
+      <h4 style="padding: 2px; font-family: 'Courier New', sans-serif;">Users</h4>
+    </div>
+    {{#each contacts}}
+      {{> user uid=uId}}
     {{/each}}
   </div>
 </template>

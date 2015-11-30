@@ -1,5 +1,7 @@
 <template name="room">
   <div class="room">
-    
+    {{#each messages}}
+      {{> message userid=userid text=text timestamp=timestamp }}
+    {{/each}}
   </div>
 </template>

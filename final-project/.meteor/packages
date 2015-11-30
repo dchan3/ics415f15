@@ -20,3 +20,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 iron:router
 useraccounts:bootstrap
 accounts-password
+matb33:bootstrap-glyphicons

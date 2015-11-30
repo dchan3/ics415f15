@@ -1,5 +1,10 @@
 <template name="chatroom">
   <div class="row">
+    <div class="col-xs-12">
+      <div class="error"><p class="actualerror"></p></div>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-xs-3">
       {{> channels}}
       <input id="channame" type="text">
@@ -7,7 +12,7 @@
     </div>
     <div class="col-xs-9">
       {{> room}}
-      <input class="enter" type="text">
+      <input class="enter" type="text" disabled>
     </div>
   </div>
 </template>

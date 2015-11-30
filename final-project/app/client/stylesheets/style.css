@@ -36,3 +36,73 @@
   display: none;
   width: 100%;
 }
+
+.channel {
+  border: thin black solid;
+}
+
+.channel:hover {
+  background-color: gray;
+}
+
+.channel h5 {
+  padding: 2px;
+  display: inline;
+}
+
+.user {
+  border: thin black solid;
+}
+
+.user:hover {
+  background-color: gray;
+}
+
+.user h5 {
+  padding: 2px;
+  display: inline;
+}
+
+.selected {
+  background-color: yellow;
+}
+
+.glyphicon-remove {
+  color: black;
+}
+
+.glyphicon-remove:hover {
+  color: red;
+}
+
+.message {
+  border: thin black solid;
+}
+
+.msgtext {
+  display: inline;
+  padding: 2px 2px;
+  font-family: 'Courier New', sans-serif;
+}
+
+.username {
+  display: inline;
+  padding: 2px 2px;
+  font-family: 'Courier New', sans-serif;
+}
+
+.timestamp {
+  display: inline;
+  padding: 2px 2px;
+  font-family: 'Abel', sans-serif;
+}
+
+.error {
+  background-color: #eb6864;
+  display: none;
+}
+
+.actualerror {
+  padding: 2px;
+  color: #132639;
+}
